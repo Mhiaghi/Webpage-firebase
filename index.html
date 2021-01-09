@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>WebPage</title>
+    <link rel = "stylesheet" href = "estilo.css">
+</head>
+<body>
+    <header>
+        <div class ="textos">
+            <h1 class = "titulo">Sistema IOT</h1>
+            <h3 class = "subtitulo">Version 1.0.0</h3>
+            <a href = "#Inicio" class = "boton">Iniciar</a>
+        </div>
+        <div class = "sesgoabajo"></div>
+    </header>
+    <main>
+        <section class = "Proposito" id = "Inicio">
+            <div class = "contenedor">
+                <h2 class ="pagina-titulo">Propósito</h2>
+                <h3 class = "slogan">Version 1.0</h3>
+                <p class = "parrafo">Aún no se puede controlar nada</p>
+                <a href = "#IOT" class = "boton">IOT</a>
+            </div>
+        </section>
+        <section class ="galeria">
+            <div class = "sesgoarriba"></div>
+            <div class = "imagenes">
+                <img src ="img/img1.jpg" alt = "">
+            </div>
+            <div class = "imagenes">
+                <img src ="img/img2.jpg" alt = "">
+            </div>
+            <div class = "imagenes">
+                <img src ="img/img3.png" alt = "">
+                <div class ="encima">
+                    <h2>Sistema IOT</h2>
+                    <div></div>
+                </div>
+            </div>
+            <div class = "imagenes">
+                <img src ="img/img4.jpg" alt = "">
+            </div>
+            <div class = "imagenes">
+                <img src ="img/img5.jpg" alt = "">
+            </div>
+            <div class = "sesgoabajo"></div>
+        </section>
+        <section class ="Instrumentos-usados" id  = "IOT">
+            <div class ="contenedor">
+                <h2 class = "pagina-titulo">Instrumentos usados</h2>
+                <h3 class ="slogan">Mira las tecnologías usadas</h3>
+                <div class ="cards">
+                    <div class ="card">
+                        <img src ="img/tec01.jpg" alt = "">
+                        <h4>HTML-CSS-JS</h4>
+                        <p>Pagina Web</p>
+                    </div>
+                    <div class ="card">
+                        <img src ="img/tec02.jpg" alt = "">
+                        <h4>Arduino</h4>
+                        <p>Control de dispositivos</p>
+                    </div>
+                    <div class ="card">
+                        <img src ="img/tec03.jpg" alt = "">
+                        <h4>Firebase</h4>
+                        <p>Almacenamiento/Hosting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class ="fondo">
+            <div class ="contenedor">
+                <h2 class ="actua-titulo">Dispositivos en línea</h2>
+                <h3 class = "actua-sub">Lee los valores de los dispositivos en línea</h3>
+                <div class ="actualizaciones">
+                    <div class="actualizacion">
+                        <img src="img/actua1.jpg" alt="">
+                        <p class = "parrafo-sub">Temperatura: <p class = "parrafo-sub-val" id = "temperatura_value"></p></p>
+                    </div>
+                    <div class="actualizacion">
+                        <img src="img/actua2.png" alt="">
+                        <p class = "parrafo-sub">Distancia: <p class = "parrafo-sub-val" id = "distancia_value"></p></p>
+                    </div>
+                    <div class="actualizacion">
+                        <img src="img/actua3.jpg" alt="">
+                        <p class = "parrafo-sub">Alarma: <p class = "parrafo-sub-val" id = "alarma_value"></p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="sesgoabajo-unico"></div>
+        </section>
+    </main>
+    <footer>
+        <div class ="contenedor">
+            <h2 class = "titulo-footer">Creador</h2>
+            <h3 class = "subtitulo-footer">Miguel Saturno </h3>
+            <div class = "footer">
+                <form action="">
+                    <input type = "text" name ="" id = "" placeholder= "Temperatura">
+                    <input type = "submit" value = "Cambiar">
+
+                </form>
+            </div>
+        </div>
+    </footer>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyB39PjmXIi9zmHJlv7YQskz90WmAqKKdDE",
+    authDomain: "iot1-f4a7c.firebaseapp.com",
+    projectId: "iot1-f4a7c",
+    storageBucket: "iot1-f4a7c.appspot.com",
+    messagingSenderId: "991270506199",
+    appId: "1:991270506199:web:cfdf76f14055852ce5aa92",
+    measurementId: "G-XVN9EWF8SS"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src = "codigo.js"></script>
+</body>
+</html>
